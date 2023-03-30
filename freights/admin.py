@@ -4,7 +4,7 @@ from .models import Freight
 
 class FreightAdmin(admin.ModelAdmin):
     list_display = ('formated_order', 'carrier',
-                    'delivery_time', 'formated_delivery_cost')
+                    'formated_delivery_time', 'formated_delivery_cost')
 
     def formated_order(self, obj):
         return obj.order
@@ -14,5 +14,8 @@ class FreightAdmin(admin.ModelAdmin):
         return f'R$ {obj.delivery_cost}'
     formated_delivery_cost.short_description = 'Delivery Cost'
 
+    def formated_delivery_time(self, obj):
+        return f'{obj.delivery_time} days'
+    formated_delivery_time.short_description = "Delivery time"
 
 admin.site.register(Freight, FreightAdmin)

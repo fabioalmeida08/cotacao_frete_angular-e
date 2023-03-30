@@ -77,12 +77,16 @@ def calculate_freight(modeladmin, request, queryset):
 
 class OrderAdmin(admin.ModelAdmin):
     list_display = ('formated_order_number', 'amount',
-                    'weight', 'zip_from', 'zip_to')
+                    'formated_weight', 'zip_from', 'zip_to')
     actions = [calculate_freight]
 
     def formated_order_number(self, obj):
         return obj.number
     formated_order_number.short_description = "order number"
+
+    def formated_weight(self, obj):
+        return f'{obj.weight} kg'
+    formated_weight.short_description = "weight"
 
 
 admin.site.register(Order, OrderAdmin)

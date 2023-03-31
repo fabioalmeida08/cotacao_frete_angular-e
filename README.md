@@ -65,3 +65,4 @@ $ python3 manage.py createsuperuser
 
 ### TODO
 - [ ] Deploy the application online
+- [ ] Write Tests

@@ -2,9 +2,7 @@
 
 Este é o projeto de teste Python da Angular e-Commerce usando Django e Postgres.
 
-# Testar online
-
-http://angular-e.plusrev2.cloud/admin
+# ~~Testar online~~
 
 # Testar Aplicação usando Docker compose 🐋
 ### Pré-requisitos

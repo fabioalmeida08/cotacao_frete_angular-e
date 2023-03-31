@@ -75,9 +75,22 @@ A aplicação é construída usando uma arquitetura de 3 camadas, consistindo de
 
 ## [diagrama interativo do deploy](https://app.cloudcraft.co/view/d1063e39-6fc0-4dd9-b2e9-e4d17e26a305?key=0dbcf276-4a72-409f-8b62-0f64f65e58fc)
 
-# Video
+# Videos
+
+## Rodando localmente
+
+[projeto_angular-e1.webm](https://user-images.githubusercontent.com/91635002/229104258-017a07d8-ee50-41a1-a132-b1d6aeae0908.webm)
+
+#### [link alternativo](https://streamable.com/th69s6)
+
+## Rodando o projeto na aws + testes
+
+[peojeto_angular-e4.webm](https://user-images.githubusercontent.com/91635002/229159143-85df72ea-10bb-4a55-87af-d39c75ccd1fc.webm)
+
+#### [link alternativo](https://streamable.com/ftwp9o)
+
 
 ### TODO
 - [x] Deploy the application online
-- [ ] Write Tests
-- [ ] Record the Video
+- [X] Write Tests
+- [X] Record the Video

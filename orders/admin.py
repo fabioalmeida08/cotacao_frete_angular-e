@@ -84,11 +84,15 @@ def calculate_freight(modeladmin, request, queryset):
             messages.error(
                 request, f'Erro ao calcular fretes para o pedido {order.number}')
 
+class FreighInLine(admin.TabularInline):
+    model = Freight
+    extra = 1
 
 class OrderAdmin(admin.ModelAdmin):
     list_display = ('formated_order_number', 'amount',
                     'formated_weight', 'zip_from', 'zip_to')
     actions = [calculate_freight]
+    inlines = [FreighInLine]
 
     def formated_order_number(self, obj):
         return obj.number

@@ -57,6 +57,16 @@ def calculate_freight(modeladmin, request, queryset):
         if response.status_code == 200:
             for item in response_dict:
 
+                # como na documentação da API do melhor envio está escrito que apenas os Correios e Jadlog está disponivel
+                # no sandbox e a jadlog volta com duas opçoes no campo name que são .Com e .Package
+                # decidi usar esse loop para por o nome da transportadora - opção disponivel 
+                if item['name'] == '.Com':
+                    item['name'] = 'JadeLog - Option 1'
+                elif item["name"] == '.Package':
+                    item["name"] = "JadeLog - Option 2"
+                else: 
+                    item["name"] = f'Correios - {item["name"]}'
+
                 freight = Freight(
                     order=order,
                     carrier=item["name"],

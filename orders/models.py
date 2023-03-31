@@ -1,5 +1,6 @@
 from django.db import models
 import uuid
+from django.core import validators
 
 
 class Order(models.Model):
@@ -10,8 +11,8 @@ class Order(models.Model):
     width = models.PositiveIntegerField(verbose_name='Width (cm)')
     height = models.PositiveIntegerField(verbose_name='Height (cm)')
     length = models.PositiveIntegerField(verbose_name='Lenght in (cm)')
-    zip_from = models.CharField(max_length=10)
-    zip_to = models.CharField(max_length=10)
+    zip_from = models.CharField(max_length=10, validators=[validators.RegexValidator(r'[0-9]+$', 'Enter a valid zip code.')])
+    zip_to = models.CharField(max_length=10, validators=[validators.RegexValidator(r'[0-9]+$', 'Enter a valid zip code.')])
 
     def __str__(self):
         return f'{self.number}'

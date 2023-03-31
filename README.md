@@ -79,9 +79,9 @@ A aplicação é construída usando uma arquitetura de 3 camadas, consistindo de
 
 ## Rodando localmente
 
-[projeto_angular-e1.webm](https://user-images.githubusercontent.com/91635002/229104258-017a07d8-ee50-41a1-a132-b1d6aeae0908.webm)
+[angular_project_e111.webm](https://user-images.githubusercontent.com/91635002/229181984-9e4f6f2e-843d-4d9a-893b-04bf5e1ae3cc.webm)
 
-#### [link alternativo](https://streamable.com/th69s6)
+#### [link alternativo](https://streamable.com/xvm029)
 
 ## Rodando o projeto na aws + testes
 

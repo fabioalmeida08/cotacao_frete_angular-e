@@ -2,7 +2,11 @@
 
 Este é o projeto de teste Python da Angular e-Commerce usando Django e Postgres.
 
+# Testar online
 
+http://angular-e.plusrev2.cloud/admin
+
+# Testar Aplicação usando Docker compose 🐋
 ### Pré-requisitos
 - [Docker](https://docs.docker.com/engine/install/) e [Docker Compose](https://docs.docker.com/compose/install/) instalados na sua máquina
 
@@ -70,6 +74,6 @@ A aplicação é construída usando uma arquitetura de 3 camadas, consistindo de
 # Video
 
 ### TODO
-- [ ] Deploy the application online
+- [x] Deploy the application online
 - [ ] Write Tests
 - [ ] Record the Video

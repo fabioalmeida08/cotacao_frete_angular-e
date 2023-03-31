@@ -9,3 +9,6 @@ class Freight(models.Model):
     delivery_time = models.PositiveIntegerField()
     delivery_cost = models.FloatField()
     external_freight_id = models.PositiveIntegerField()
+
+    def __str__(self) -> str:
+        return f'Freight id: {self.id}'

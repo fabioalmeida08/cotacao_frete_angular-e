@@ -10,11 +10,13 @@ http://angular-e.plusrev2.cloud/admin
 ### Pré-requisitos
 - [Docker](https://docs.docker.com/engine/install/) e [Docker Compose](https://docs.docker.com/compose/install/) instalados na sua máquina
 
-1. Crie um arquivo docker-compose.yml e um arquivo .env no mesmo diretório, alterando as variáveis DATABASE_URL de acordo com as variáveis do POSTGRES.
+1. Crie um arquivo docker-compose.yml e um arquivo .env no mesmo diretório, alterando as variáveis DATABASE_URL de acordo com as variáveis do POSTGRES e completando as demais variáveis.
 
 # .env
 ```
-DATABASE_URL=postgres://POSTGRES_USER:POSTGRES_PASSWORD@db:5432/PORSTGRES_DB
+DATABASE_URL=postgres://POSTGRES_USER:POSTGRES_PASSWORD@db:5432/POSTGRES_DB
+TOKEN=
+SECRET_KEY=
 POSTGRES_PASSWORD=
 POSTGRES_USER=
 POSTGRES_DB=

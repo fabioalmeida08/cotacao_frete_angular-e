@@ -67,11 +67,13 @@ $ python3 manage.py createsuperuser
 ```
 4. Agora você pode fazer login como administrador em http://127.0.0.1:8000/admin
 
-# Sobre o Deploy
+# Sobre o [Deploy](https://app.cloudcraft.co/view/d1063e39-6fc0-4dd9-b2e9-e4d17e26a305?key=0dbcf276-4a72-409f-8b62-0f64f65e58fc)
 A aplicação é construída usando uma arquitetura de 3 camadas, consistindo de um balanceador de carga, dois servidores que executam a aplicação Django e um servidor de banco de dados PostgreSQL. Os servidores que executam a aplicação Django estão hospedados em instâncias do Amazon Elastic Compute Cloud (EC2) que executam contêineres Docker, localizados em sub-redes públicas diferentes e em AZs diferentes, garantindo alta disponibilidade. Os contêineres Docker servem como ponto de entrada para a aplicação Django. O servidor de banco de dados é hospedado em uma instância do Amazon Relational Database Service (RDS), localizada em uma sub-rede privada em outra Zona de Disponibilidade (AZ) protegida por um grupo de segurança que aceita somente requisições das instâncias EC2.
 
 ![deploy2d](https://i.imgur.com/6YlzCca.png)
 ![deploy3d](https://i.imgur.com/waQYSNV.png)
+
+## [diagrama interativo do deploy](https://app.cloudcraft.co/view/d1063e39-6fc0-4dd9-b2e9-e4d17e26a305?key=0dbcf276-4a72-409f-8b62-0f64f65e58fc)
 
 # Video
 
